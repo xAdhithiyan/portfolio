@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <script src="script.js" defer ></script>
     <title>Adhithiyan B</title>
   </head>
+
   <body class="bg-dracula">
     <!-- front page  -->
-    <header class="flex h-screen justify-center items-center font-custom bg-dracula text-white">
+    <header id="home" class="flex h-screen justify-center items-center font-custom bg-dracula text-white">
       <div class="bg-dracula z-10 p-16">
         <img src="../assets/pfp.jpg " alt="profile photo" class="h-60 rounded-full custom-fade-in" />
       </div>
@@ -39,7 +41,7 @@
         </div>
       </div>
 
-      <a href="#about" class="fixed bottom-3">
+      <a href="#" class="fixed bottom-3 down-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -57,9 +59,10 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#blogs">Blogs</a>
-      <a href="#contants">Contant</a>
+      <a href="#contacts">Contact</a>
     </nav>
 
+    <!-- about page -->
     <section id="about" class="h-screen bg-dracula text-white font-custom grid grid-cols-2 justify-center items-center text-3xl ml-24 mr-24">
       <h1 class="mb-10 text-6xl col-start-1 col-end-3 self-end">About</h1>
       <div class="pr-44 self-start border-r-2 border-white">
@@ -127,5 +130,14 @@
         </div>
       </div>
     </section>
+    </a>
+    <!-- project page -->
+    <section id="projects" class="h-screen">
+      <h1>Project</h1>
+    </section>
+
+    <section id="blogs" class="h-screen bg-yellow-600"></section>
+    <section id="contacts" class="h-screen bg-blue-600"></section>
+
   </body>
 </html>
