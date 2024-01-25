@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
     <title>Adhithiyan B</title>
   </head>
-  <body>
+  <body class="bg-dracula">
+    <!-- front page  -->
     <header class="flex h-screen justify-center items-center font-custom bg-dracula text-white">
       <div class="bg-dracula z-10 p-16">
         <img src="../assets/pfp.jpg " alt="profile photo" class="h-60 rounded-full custom-fade-in" />
@@ -24,18 +26,106 @@
           <div class="bg-dracula z-10">
             <img style="animation-delay: 1.2s" src="../assets/arrow.svg" alt="arrow" class="h-16 opacity-0 custom-fade-in" />
           </div>
-          <h1 style="animation-delay: 1.8s;" class="opacity-0 custom-translate-more"">I am <span class="font-bold text-green-600">Adhithiyan B</span>,</h1>
+          <h1 style="animation-delay: 1.8s" class="opacity-0 custom-translate-more">
+            I am <span class="font-bold text-green-600">Adhithiyan B</span>,
+          </h1>
         </div>
 
         <div class="flex items-center">
           <div class="bg-dracula z-10">
-            <img style="animation-delay: 2.5s;" src="../assets/arrow.svg" alt="arrow" class="h-16 opacity-0 custom-fade-in" />
+            <img style="animation-delay: 2.5s" src="../assets/arrow.svg" alt="arrow" class="h-16 opacity-0 custom-fade-in" />
           </div>
-          <h1 style="animation-delay: 3s;" class="opacity-0 custom-translate-more">A Front-End Developer.</h1>
+          <h1 style="animation-delay: 3s" class="opacity-0 custom-translate-more">A Front-End Developer.</h1>
+        </div>
+      </div>
+
+      <a href="#about" class="fixed bottom-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          style="animation-delay: 3.7s"
+          class="h-32 rounded custom-fade-in group hover:bg-green-600 opacity-0 transition-colors duration-1000 ease-in-out"
+        >
+          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" fill="#16a34a" class="group-hover:fill-dracula" />
+        </svg>
+      </a>
+    </header>
+
+    <nav
+      class="sticky top-3 m-3 rounded-xl border-2 border-black h-14 flex justify-end items-center gap-10 pr-10 font-custom text-3xl bg-semi-dracula text-white"
+    >
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#contants">Contant</a>
+    </nav>
+
+    <section id="about" class="h-screen bg-dracula text-white font-custom grid grid-cols-2 justify-center items-center text-3xl ml-24 mr-24">
+      <h1 class="mb-10 text-6xl col-start-1 col-end-3 self-end">About</h1>
+      <div class="pr-44 self-start border-r-2 border-white">
+        <div>I am a <span class="text-green-600 font-semibold">front-end developer </span>who likes to create easy-to-use web applications.</div>
+        <br />
+        <div>
+          Currently pursuing a bachelor's degree in computer science. Been coding for almost 2 years and i am always looking for ways to
+          <span class="text-green-600">grow as a developer</span>.
+        </div>
+        <br />
+        <div>This little corner of the internet showcases some of my past projects, offering a sneak peek into my skills and experiences.</div>
+        <br />
+        <div>Thank you for stopping by!</div>
+      </div>
+
+      <div class="ml-24 mr-24 self-start justify-self-center flex gap-8 flex-col w-full">
+        <div class="grid grid-cols-3">
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-html5-plain colored text-5xl"></i>
+            <div>HTML</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-css3-plain colored text-5xl"></i>
+            <div>CSS</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-tailwindcss-original-wordmark colored text-5xl"></i>
+            <div>Tailwind</div>
+          </div>
         </div>
 
+        <div class="grid grid-cols-3">
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-javascript-plain colored text-5xl"></i>
+            <div>Javascript</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-react-original colored text-5xl"></i>
+            <div>React</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-jest-plain colored text-5xl"></i>
+            <div>Jest</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-git-plain colored text-5xl"></i>
+            <div>Git</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-webpack-plain colored text-5xl"></i>
+            <div>Webpack</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="devicon-npm-original-wordmark colored text-5xl"></i>
+            <div>NPM</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <i class="devicon-linux-plain colored text-5xl"></i>
+          <div>Linux</div>
+        </div>
       </div>
-      <img style="animation-delay: 3.7s;" src="../assets//arrow-down.svg" alt="down arrow" class="h-32 fixed bottom-3 opacity-0 custom-fade-in " />
-    </header>
+    </section>
   </body>
 </html>

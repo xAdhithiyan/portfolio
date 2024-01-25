@@ -2,13 +2,19 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
-    fontFamily: {
-      custom: ['VT323', 'monospace'],
-    },
-    backgroundColor: {
-      dracula: '#282a36',
+    extend: {
+      fontFamily: {
+        custom: ['VT323', 'monospace'],
+      },
+      backgroundColor: {
+        dracula: '#282a36',
+        'semi-dracula': '#474A5E',
+      },
+      fill: {
+        dracula: '#282a36',
+      },
     },
   },
+
   plugins: [],
 };
