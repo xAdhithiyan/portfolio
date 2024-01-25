@@ -1,6 +1,55 @@
-/*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
-*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* animations */
+
+.custom-fade-in {
+  animation: fade-in 1.7s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.custom-translate {
+  animation: translate-top 1s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.custom-translate-more {
+  animation: translate-top-more 1.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes translate-top {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translate-top-more {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -444,7 +493,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -494,7 +543,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -544,7 +593,90 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-yellow-700 {
+.fixed{
+  position: fixed;
+}
+
+.bottom-3{
+  bottom: 0.75rem;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-16{
+  height: 4rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-60{
+  height: 15rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.bg-dracula{
   --tw-bg-opacity: 1;
-  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
+  background-color: rgb(40 42 54 / var(--tw-bg-opacity));
+}
+
+.p-16{
+  padding: 4rem;
+}
+
+.font-custom{
+  font-family: VT323, monospace;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-green-600{
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0{
+  opacity: 0;
 }
