@@ -13,6 +13,12 @@ module.exports = {
       fill: {
         dracula: '#282a36',
       },
+      borderColor: {
+        dracula: '#282a36',
+      },
+      textColor: {
+        dracula: '#282a36',
+      },
     },
   },
 

@@ -36,4 +36,24 @@ function remapArrow() {
   }
 }
 
+function submitButton() {
+  let submit = document.getElementById('submit');
+  let name = document.getElementById('name');
+  let email = document.getElementById('email');
+  let message = document.getElementById('message');
+  let form = document.querySelector('form');
+
+  console.log(submit);
+  submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (form.reportValidity()) {
+      console.log(name.value, email.value, message.value);
+      name.value = email.value = message.value = '';
+    }
+  });
+
+  // connecting to google spreadsheet
+}
+
 remapArrow();
+submitButton();
