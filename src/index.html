@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-    <script src="script.js" defer ></script>
+    <script src="script.js" defer></script>
     <title>Adhithiyan B</title>
   </head>
 
@@ -58,7 +58,6 @@
     >
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#blogs">Blogs</a>
       <a href="#contacts">Contact</a>
     </nav>
 
@@ -130,14 +129,60 @@
         </div>
       </div>
     </section>
-    </a>
-    <!-- project page -->
-    <section id="projects" class="h-screen">
-      <h1>Project</h1>
+
+    <!-- section page -->
+    <section id="projects" class="h-screen bg-dracula text-white font-custom flex flex-col justify-center gap-10 text-1xl ml-24 mr-24">
+      <h1 class="col-start-1 col-end-3 text-6xl self-start mb-10">Project</h1>
+
+      <div class="flex gap-10">
+        <div class="grid grid-cols-2 gap-4 self-start justify-self-center w-4/5">
+          <a href="https://github.com/xAdhithiyan/weather-app" target="_blank" class="row-start-1 row-end-3"
+            ><img class="rounded-md border-2 border-black" src="../assets/p1.png" alt="weather app"
+          /></a>
+          <a href="https://github.com/xAdhithiyan/weather-app" target="_blank">
+            <div class="text-3xl mt-4 w-max hover:text-green-600 transition duration-300">Weather App</div>
+          </a>
+          <div class="justify-self-start -mt-14">
+            A website that fetches and displays weather forecast information based on the city entered by user.
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 self-start justify-self-center w-4/5">
+          <a href="https://github.com/xAdhithiyan/KzForms" target="_blank" class="row-start-1 row-end-3"
+            ><img class="rounded-md border-2 border-black" src="../assets/p5.png" alt="kz forms"
+          /></a>
+          <a href="https://github.com/xAdhithiyan/KzForms" target="_blank">
+            <div class="text-3xl mt-4 w-max hover:text-green-600 transition duration-300">KZforms</div>
+          </a>
+          <div class="justify-self-start -mt-14">A simple sign up form built using React.js(vite) that uses yum library for form validation.</div>
+        </div>
+      </div>
+
+      <div class="flex gap-10">
+        <div class="grid grid-cols-2 gap-4 self-start justify-self-center w-4/5">
+          <a href="https://github.com/xAdhithiyan/todo-list" target="_blank" class="row-start-1 row-end-3"
+            ><img class="rounded-md border-2 border-black" src="../assets/p2.png" alt="todo list"
+          /></a>
+          <a href="https://github.com/xAdhithiyan/todo-list" target="_blank">
+            <div class="text-3xl mt-4 w-max hover:text-green-600 transition duration-300">Todo list</div>
+          </a>
+          <div class="justify-self-start -mt-14">A website where users can add, delete and edit their todo list.</div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 self-start justify-self-center w-4/5">
+          <a href="https://github.com/xAdhithiyan/battleship" target="_blank" class="row-start-1 row-end-3"
+            ><img class="rounded-md border-2 border-black" src="../assets/p3.png" alt="battleship"
+          /></a>
+          <a href="https://github.com/xAdhithiyan/battleship" target="_blank">
+            <div class="text-3xl mt-4 w-max hover:text-green-600 transition duration-300">BattleShip</div>
+          </a>
+          <div class="justify-self-start -mt-14">
+            A website to play a game of battleship. Test driven development (jest) was used in the early stages of the project.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="blogs" class="h-screen bg-yellow-600"></section>
     <section id="contacts" class="h-screen bg-blue-600"></section>
-
   </body>
 </html>

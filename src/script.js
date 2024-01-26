@@ -1,10 +1,9 @@
 function remapArrow() {
   let div = document.querySelector('.down-arrow');
-  let arr = ['home', 'about', 'projects', 'blogs', 'contacts'];
+  let arr = ['home', 'about', 'projects', 'contacts'];
 
   div.addEventListener('click', (e) => {
     let anchor = e.target.closest('a');
-    console.log(anchor.href.split('#'));
     for (let i = 0; i < arr.length; i++) {
       if (!anchor.href.split('#')[1]) {
         anchor.setAttribute('href', '#' + arr[1]);
@@ -13,7 +12,6 @@ function remapArrow() {
         anchor.setAttribute('href', '#' + arr[0]);
         break;
       } else if (anchor.href.split('#')[1] == arr[i]) {
-        console.log(anchor);
         anchor.setAttribute('href', anchor.href.split('#')[0] + '#' + arr[i + 1]);
         break;
       }
