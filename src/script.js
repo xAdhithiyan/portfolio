@@ -1,34 +1,35 @@
 function remapArrow() {
-  let div = document.querySelector('.down-arrow');
-  let arr = ['home', 'about', 'projects', 'contacts'];
+  let btn1 = document.querySelector('.btn1');
+  let btn2 = document.querySelector('.btn2');
+  let btn3 = document.querySelector('.btn3');
+  let btn4 = document.querySelector('.btn4');
 
-  div.addEventListener('click', (e) => {
+  btn1.addEventListener('click', (e) => {
     let anchor = e.target.closest('a');
-    for (let i = 0; i < arr.length; i++) {
-      if (!anchor.href.split('#')[1]) {
-        anchor.setAttribute('href', '#' + arr[1]);
-        break;
-      } else if (anchor.href.split('#')[1] == 'contacts') {
-        anchor.setAttribute('href', '#' + arr[0]);
-        break;
-      } else if (anchor.href.split('#')[1] == arr[i]) {
-        anchor.setAttribute('href', anchor.href.split('#')[0] + '#' + arr[i + 1]);
-        break;
-      }
-    }
+    console.log(anchor);
+    anchor.setAttribute('href', '#about');
   });
 
-  // to map nav buttons to down buttons
-  let nav = document.querySelector('nav').children;
-  nav = Array.from(nav);
-  nav.forEach((element) => {
-    element.addEventListener('click', (e) => {
-      let div = document.querySelector('.down-arrow');
-      let divHref = div.href.split('#')[0];
-      div.setAttribute('href', divHref + '#' + e.target.href.split('#')[1]);
-    });
+  btn2.addEventListener('click', (e) => {
+    let anchor = e.target.closest('a');
+    console.log(anchor);
+    anchor.setAttribute('href', '#projects');
   });
 
+  btn3.addEventListener('click', (e) => {
+    let anchor = e.target.closest('a');
+    console.log(anchor);
+    anchor.setAttribute('href', '#contacts');
+  });
+
+  btn4.addEventListener('click', (e) => {
+    let anchor = e.target.closest('a');
+    console.log(anchor);
+    anchor.setAttribute('href', '#home');
+  });
+}
+
+function reloadPage() {
   // Check if the page is being reloaded
   if (performance.navigation.type === 1) {
     // Remove the extra hash from the URL
@@ -43,7 +44,6 @@ function submitButton() {
   let message = document.getElementById('message');
   let form = document.querySelector('form');
 
-  console.log(submit);
   submit.addEventListener('click', (e) => {
     e.preventDefault();
     if (form.reportValidity()) {
@@ -56,4 +56,5 @@ function submitButton() {
 }
 
 remapArrow();
+reloadPage();
 submitButton();

@@ -43,6 +43,11 @@
   }
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+  display: none; /* Optional: hiding scrollbar in Firefox and IE */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

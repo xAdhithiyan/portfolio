@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="overflow-y-hidden h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,9 @@
     <title>Adhithiyan B</title>
   </head>
 
-  <body class="bg-dracula">
+  <body class="bg-dracula h-full overflow-y-scroll scroll-smooth snap-y snap-mandatory">
     <!-- front page  -->
-    <header id="home" class="flex h-screen justify-center items-center font-custom bg-dracula text-white">
+    <header id="home" class="flex h-screen justify-center items-center font-custom bg-dracula text-white snap-start snap-always relative">
       <div class="bg-dracula z-10 p-16">
         <img src="../assets/pfp.jpg " alt="profile photo" class="h-60 rounded-full custom-fade-in" />
       </div>
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <a href="#" class="fixed bottom-3 down-arrow">
+      <a href="#" class="down-arrow btn1 absolute bottom-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -54,7 +54,7 @@
     </header>
 
     <nav
-      class="sticky top-3 m-3 rounded-xl border-2 border-black h-14 flex justify-end items-center gap-10 pr-10 font-custom text-3xl bg-semi-dracula text-white"
+      class="sticky top-3 m-3 rounded-xl border-2 border-black h-14 flex justify-end items-center gap-10 pr-10 font-custom text-3xl bg-semi-dracula text-white snap-none snap-always z-10"
     >
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -62,13 +62,16 @@
     </nav>
 
     <!-- about page -->
-    <section id="about" class="h-screen bg-dracula text-white font-custom grid grid-cols-2 justify-center items-center text-3xl ml-24 mr-24">
+    <section
+      id="about"
+      class="h-screen bg-dracula text-white font-custom grid grid-cols-2 justify-center items-center text-3xl ml-24 mr-24 snap-start snap-always relative"
+    >
       <h1 class="mb-10 text-6xl col-start-1 col-end-3 self-end">About</h1>
       <div class="pr-44 self-start border-r-2 border-white">
         <div>I am a <span class="text-green-600 font-semibold">front-end developer </span>who likes to create easy-to-use web applications.</div>
         <br />
         <div>
-          Currently pursuing a bachelor's degree in computer science. Been coding for almost 2 years and i am always looking for ways to
+          Currently pursuing a bachelor's degree in computer science. Been coding for almost 2 years and I am always looking for ways to
           <span class="text-green-600">grow as a developer</span>.
         </div>
         <br />
@@ -128,10 +131,23 @@
           <div>Linux</div>
         </div>
       </div>
+      <a href="#" class="down-arrow btn2 absolute bottom-3 left-1/2 transform -translate-x-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          style="animation-delay: 3.7s"
+          class="h-32 rounded custom-fade-in group hover:bg-green-600 opacity-0 transition-colors duration-1000 ease-in-out"
+        >
+          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" fill="#16a34a" class="group-hover:fill-dracula" />
+        </svg>
+      </a>
     </section>
 
-    <!-- section page -->
-    <section id="projects" class="h-screen bg-dracula text-white font-custom flex flex-col justify-center gap-10 text-1xl ml-24 mr-24">
+    <!-- project page -->
+    <section
+      id="projects"
+      class="h-screen bg-dracula text-white font-custom flex flex-col justify-center gap-10 text-1xl ml-24 mr-24 snap-start snap-always relative"
+    >
       <h1 class="col-start-1 col-end-3 text-6xl self-start mb-10">Project</h1>
 
       <div class="flex gap-10">
@@ -181,10 +197,20 @@
           </div>
         </div>
       </div>
+      <a href="#" class="down-arrow btn3 absolute bottom-3 left-1/2 transform -translate-x-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          style="animation-delay: 3.7s"
+          class="h-32 rounded custom-fade-in group hover:bg-green-600 opacity-0 transition-colors duration-1000 ease-in-out"
+        >
+          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" fill="#16a34a" class="group-hover:fill-dracula" />
+        </svg>
+      </a>
     </section>
 
     <!-- contacts page -->
-    <section id="contacts" class="h-screen bg-dracula text-white font-custom ml-24 mr-24 text-2xl flex">
+    <section id="contacts" class="h-screen bg-dracula text-white font-custom ml-24 mr-24 text-2xl flex snap-start snap-always relative">
       <div class="grid grid-cols-2 items-center self-center">
         <div class="pr-10 flex flex-col gap-5">
           <h1 class="text-6xl mb-8">Contact</h1>
@@ -199,14 +225,14 @@
           </div>
           <div class="flex gap-5 mt-3 h-14">
             <a href="https://github.com/xAdhithiyan/" target="_blank"><img class="h-14" src="../assets/github.svg" alt="github" /></a>
-            <a href="https://www.linkedin.com/in/adhithiyan-b-3a414424b/" target="_blank"
+            <a href="https://www.linkedin.com/in/adhithiyan-b-url/" target="_blank"
               ><img class="h-14" src="../assets/linkedin.svg" alt="linkden"
             /></a>
             <!-- <a href=""><img class="h-14" src="../assets/instagram.svg" alt="instagram" /></a> -->
           </div>
         </div>
 
-        <form class="h-full flex flex-col gap-5 w-4/5">
+        <form class="h-full flex flex-col gap-5 w-4/5" name="submit-to-google-sheet">
           <input
             style="background-color: rgba(255, 255, 255, 0.3)"
             class="hover:border-black border-4 border-dracula active:border-black focus:border-black rounded-lg p-2 text-green-600 outline-none placeholder:text-green-600 placeholder:opacity-70"
@@ -237,13 +263,27 @@
             autocomplete="off"
           ></textarea>
 
-          <button
-            class="hover:border-black border-4 border-dracula active:border-black focus:border-black h-16 w-24 rounded-lg text-white bg-green-600 hover:bg-semi-dracula hover:text-green-600 p-2 outline-none transition duration-300"
-            id="submit"
-          >
-            Sumbit
-          </button>
+          <div class="flex items-center">
+            <button
+              class="mr-5 hover:border-black border-4 border-dracula active:border-black focus:border-black h-16 w-24 rounded-lg text-white bg-green-600 hover:bg-semi-dracula hover:text-green-600 p-2 outline-none transition duration-300"
+              id="submit"
+            >
+              Sumbit
+            </button>
+            <div>(Currently doesnt work. will update it soon.)</div>
+          </div>
         </form>
+        <a href="#" class="down-arrow btn4 absolute bottom-3 left-1/2 transform -translate-x-1/2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            style="animation-delay: 3.7s"
+            class="h-32 rounded custom-fade-in group hover:bg-green-600 opacity-0 transition-colors duration-1000 ease-in-out"
+          >
+            <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" fill="#16a34a" />
+          </svg>
+        </a>
+        <div class="font-sans absolute bottom-0 text-sm left-1/2 transform -translate-x-1/2 mb-1">Copyright © Adhithiyan B</div>
       </div>
     </section>
   </body>
