@@ -1,7 +1,6 @@
-make the website responsive 
-below 900 is mobile view
-above - 900
-
+above 900px(aobe mobile view) layout 
+down arrow animation
+nav bar
 
 Later: 
 - change the color of nav bars w.r.t the page section 
