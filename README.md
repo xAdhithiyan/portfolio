@@ -1,7 +1,7 @@
-## portfolio 
+# portfolio 
 
-# Links
+## Links
 - [View the project](https://portfolio-sqs3.vercel.app/)
 
-# About
+## About
 - Portfolio website built using Tailwind CSS.
