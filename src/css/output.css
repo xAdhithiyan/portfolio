@@ -631,14 +631,6 @@ video {
   top: 0.75rem;
 }
 
-.start-1{
-  inset-inline-start: 0.25rem;
-}
-
-.-start-1{
-  inset-inline-start: -0.25rem;
-}
-
 .z-0{
   z-index: 0;
 }
@@ -1158,8 +1150,8 @@ video {
     grid-column-end: 3;
   }
 
-  .\39 00px\:col-end-1{
-    grid-column-end: 1;
+  .\39 00px\:-mb-12{
+    margin-bottom: -3rem;
   }
 
   .\39 00px\:-mt-20{
@@ -1194,22 +1186,6 @@ video {
     margin-top: 5rem;
   }
 
-  .\39 00px\:mr-20{
-    margin-right: 5rem;
-  }
-
-  .\39 00px\:-mb-10{
-    margin-bottom: -2.5rem;
-  }
-
-  .\39 00px\:-mb-20{
-    margin-bottom: -5rem;
-  }
-
-  .\39 00px\:-mb-12{
-    margin-bottom: -3rem;
-  }
-
   .\39 00px\:grid{
     display: grid;
   }
@@ -1234,10 +1210,6 @@ video {
     width: 100%;
   }
 
-  .\39 00px\:animate-none{
-    animation: none;
-  }
-
   .\39 00px\:snap-none{
     scroll-snap-type: none;
   }
@@ -1250,8 +1222,8 @@ video {
     flex-direction: column;
   }
 
-  .\39 00px\:items-center{
-    align-items: center;
+  .\39 00px\:gap-16{
+    gap: 4rem;
   }
 
   .\39 00px\:gap-5{
@@ -1262,63 +1234,74 @@ video {
     gap: 1.75rem;
   }
 
-  .\39 00px\:gap-10{
-    gap: 2.5rem;
-  }
-
-  .\39 00px\:gap-6{
-    gap: 1.5rem;
-  }
-
-  .\39 00px\:gap-16{
-    gap: 4rem;
-  }
-
-  .\39 00px\:self-center{
-    align-self: center;
-  }
-
   .\39 00px\:justify-self-center{
     justify-self: center;
-  }
-
-  .\39 00px\:border-b-2{
-    border-bottom-width: 2px;
   }
 
   .\39 00px\:p-5{
     padding: 1.25rem;
   }
 
-  .\39 00px\:pb-32{
-    padding-bottom: 8rem;
+  .\39 00px\:pb-28{
+    padding-bottom: 7rem;
   }
 
   .\39 00px\:pl-4{
     padding-left: 1rem;
   }
 
-  .\39 00px\:pr-4{
-    padding-right: 1rem;
-  }
-
-  .\39 00px\:pb-20{
-    padding-bottom: 5rem;
-  }
-
-  .\39 00px\:pr-20{
-    padding-right: 5rem;
-  }
-
   .\39 00px\:pr-10{
     padding-right: 2.5rem;
   }
 
-  .\39 00px\:pb-28{
-    padding-bottom: 7rem;
+  .\39 00px\:pr-4{
+    padding-right: 1rem;
   }
 
   .\39 00px\:delay-0{
     transition-delay: 0s;
+  }
+}
+
+@media (max-width: 430px){
+  .\34 30px\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 380px){
+  .\33 80px\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .\33 80px\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 1170px){
+  .\31 170px\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .\31 170px\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .\31 170px\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\31 170px\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\31 170px\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
