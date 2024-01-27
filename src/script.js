@@ -54,6 +54,9 @@ function submitButton() {
 
   // connecting to google spreadsheet
 }
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
 remapArrow();
 reloadPage();

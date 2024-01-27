@@ -1,4 +1,6 @@
 make the website responsive 
+below 900 is mobile view
+above - 900
 
 
 Later: 
