@@ -1,4 +1,0 @@
-Later: 
-- change the color of nav bars w.r.t the page section 
-- connect with google spreadsheet
-- add animation for page content(other then home page) 
